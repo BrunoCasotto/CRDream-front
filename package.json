@@ -1,0 +1,30 @@
+{
+  "name": "crdream-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoCasotto/CRDream-front.git"
+  },
+  "author": "Bruno Casotto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoCasotto/CRDream-front/issues"
+  },
+  "homepage": "https://github.com/BrunoCasotto/CRDream-front#readme",
+  "_moduleAliases": {
+    "@root": ".",
+    "@src": "./src",
+    "@modules": "./src/modules"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "module-alias": "^2.0.1"
+  }
+}
