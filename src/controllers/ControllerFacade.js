@@ -1,4 +1,4 @@
-let HomeController = require("@controllers/HomeController");
+const HomeController = require("@controllers/HomeController");
 
 class ControllerFacade {
   _constructor() {
@@ -6,7 +6,8 @@ class ControllerFacade {
   }
 
   renderHome(req, res) {
-    res.send("version controller")
+    let controller = new HomeController();
+    return controller.index(req, res);
   }
 } 
 module.exports = ControllerFacade

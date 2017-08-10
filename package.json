@@ -27,5 +27,7 @@
   "dependencies": {
     "express": "^4.15.4",
     "module-alias": "^2.0.1"
+  },
+  "devDependencies": {
   }
 }

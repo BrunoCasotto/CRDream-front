@@ -1,7 +1,7 @@
 
 class HomeController {
-  _constructor() {
-    console.log("Example controller")
+  index(req, res) {
+    res.send("homeController");
   }
 } 
 module.exports = HomeController
