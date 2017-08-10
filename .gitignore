@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+# public ignores
+public
+!public/images
+

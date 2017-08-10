@@ -10,6 +10,8 @@ const app = express();
 
 app.use("/", require("@src/routes.js"))
 
+app.use(express.static('public'));
+
 app.engine('dust', dust.engine({
   useHelpers: true
 }))
