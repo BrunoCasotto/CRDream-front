@@ -21,7 +21,8 @@
   "_moduleAliases": {
     "@root": ".",
     "@src": "./src",
-    "@modules": "./src/modules"
+    "@modules": "./src/modules",
+    "@controllers": "./src/controllers"
   },
   "dependencies": {
     "express": "^4.15.4",

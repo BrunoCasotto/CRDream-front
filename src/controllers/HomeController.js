@@ -1,6 +1,7 @@
-class ExampleController {
+
+class HomeController {
   _constructor() {
     console.log("Example controller")
   }
 } 
-module.exports = ExampleController
+module.exports = HomeController
