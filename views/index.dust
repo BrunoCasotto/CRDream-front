@@ -1,13 +1,17 @@
 <html>
+
   <head>
-    <title>CRDream</title>
+    <title>{+titleContent/}</title>
   </head>
+
   <body>
     <div class="app">
       {+bodyContent/}
     </div>
-  <footer>
-    {+footerContent/}
-  </footer>
+    <footer>
+      {+footerContent/}
+    </footer>
+    {+scriptContent/}
   </body>
+
 </html>
