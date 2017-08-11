@@ -1,7 +1,7 @@
 
 class HomeController {
   index(req, res) {
-    res.render('pages/home/template',{})
+    res.render('pages/contact/template',{})
   }
 } 
 module.exports = HomeController

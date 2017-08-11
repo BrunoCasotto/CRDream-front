@@ -1,8 +1,10 @@
 const path = require('path');
 
-const js_path = path.resolve(__dirname, '..', 'resources/assets/js');
+const views_path = path.resolve(__dirname, '..', 'views');
+
+const pages_path = path.join(views_path,'pages')
 
 module.exports = {
-  home: path.join(js_path,'pages', 'home.js'),
-  contact: path.join(js_path,'pages', 'contact.js'),
+  home: path.join(pages_path, 'home', 'script'),
+  contact: path.join(pages_path, 'contact', 'script'),
 }

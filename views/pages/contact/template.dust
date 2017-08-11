@@ -1,0 +1,11 @@
+{>"index"/}
+
+{<bodyContent}
+  <div id="contact">
+    <p>contact</p>
+  </div>
+{/bodyContent}
+
+{<scriptContent}
+  <script type="text/javascript" src="/js/contact.bundle.js"></script>
+{/scriptContent}
