@@ -58,6 +58,5 @@ typings/
 .env
 
 # public ignores
-public
-!public/images
-
+!./public/images
+./public/*
