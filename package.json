@@ -7,6 +7,7 @@
     "test": "test",
     "dev": "nodemon index.js",
     "start": "node index.js",
+    "build:prod": "webpack --config webpack/webpack.base.js -p",
     "build": "gulp css"
   },
   "repository": {
@@ -26,6 +27,7 @@
     "@controllers": "./src/controllers",
     "@views": "./views",
     "@sass": "./resources/assets/sass",
+    "@js": "./resources/assets/js",
     "@public": "./public"
   },
   "dependencies": {

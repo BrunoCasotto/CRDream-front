@@ -59,4 +59,4 @@ typings/
 
 # public ignores
 !./public/images
-./public/*
+/public/
