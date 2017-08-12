@@ -15,6 +15,12 @@ module.exports = {
     path: path.join(__dirname, '..', 'public'),
     filename: "js/[name].js",
   },
+    devtool: 'source-map',
+    resolve: {
+      alias: {
+        _sass: path.join(__dirname, '..', 'resources', 'sass')
+      }
+    },
   module: {
     rules: [
       {

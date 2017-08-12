@@ -1,4 +1,6 @@
+@import '~_sass/config';
+
 #home {
-  background: red;
+  background: $color-primary;
   display: flex;
 }
