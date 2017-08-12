@@ -1,3 +1,3 @@
 (function(template){
-  console.log(template.getElementsByTagName('p'))
+  console.log(template)
 })(document.getElementById('home'))

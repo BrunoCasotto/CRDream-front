@@ -2,15 +2,29 @@ const webpack = require('webpack');
 
 const path = require('path');
 
-//getting object of js files ton load
-const jsPath = require("./jsFilesConfig.js");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const assetsPath = require("./assetsFilesConfig.js");
 
 module.exports = {
-  entry: jsPath,
+  entry: assetsPath,
+  watch: true,
   output: {
-    path: path.join(__dirname, '..', 'public/js'),
-    publicPath: '/public/',
-    filename: "[name].bundle.js",
-    chunkFilename: "[id].bundle.js",
-  }
+    path: path.join(__dirname, '..', 'public'),
+    filename: "js/[name].bundle.js",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+      }
+    ]
+  },
+  plugins: [
+    new ExtractTextPlugin({
+      filename: 'css/[name].bundle.css',
+      allChunks: true,
+    }),
+  ],
 };

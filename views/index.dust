@@ -2,6 +2,7 @@
 
   <head>
     <title>{+titleContent/}</title>
+    {+styleContent/}
   </head>
 
   <body>

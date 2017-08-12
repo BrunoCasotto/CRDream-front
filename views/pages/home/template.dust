@@ -3,8 +3,13 @@
 {<bodyContent}
   <div id="home">
     <p>Your body content</p>
+    <button>Test</button>
   </div>
 {/bodyContent}
+
+{<styleContent}
+  <link href="/css/home.bundle.css" rel="stylesheet" type="text/css">
+{/styleContent}
 
 {<scriptContent}
   <script type="text/javascript" src="/js/home.bundle.js"></script>

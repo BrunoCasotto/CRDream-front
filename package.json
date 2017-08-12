@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "dev": "nodemon index.js",
     "start": "node index.js",
     "build:prod": "webpack --config webpack/webpack.base.js -p",
+    "dev": "concurrently \"npm run watch:dev\" \"npm run build:dev\"",
+    "watch:dev": "nodemon index.js",
+    "build:dev": "webpack --watch --config webpack/webpack.base.js",
     "build": "gulp css"
   },
   "repository": {
@@ -38,5 +39,11 @@
     "module-alias": "^2.0.1",
     "webpack": "^3.5.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2"
+  }
 }
