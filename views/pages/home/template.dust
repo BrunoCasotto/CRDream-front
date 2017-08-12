@@ -8,9 +8,9 @@
 {/bodyContent}
 
 {<styleContent}
-  <link href="/css/home.bundle.css" rel="stylesheet" type="text/css">
+  <link href="/css/home.css" rel="stylesheet" type="text/css">
 {/styleContent}
 
 {<scriptContent}
-  <script type="text/javascript" src="/js/home.bundle.js"></script>
+  <script type="text/javascript" src="/js/home.js"></script>
 {/scriptContent}

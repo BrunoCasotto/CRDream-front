@@ -8,4 +8,5 @@ module.exports = {
   home: path.join(pages_path, 'home', 'script'),
   home: path.join(pages_path, 'home', 'style.scss'),
   contact: path.join(pages_path, 'contact', 'script'),
+  contact: path.join(pages_path, 'contact', 'style.scss'),
 }

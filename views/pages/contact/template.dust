@@ -7,5 +7,5 @@
 {/bodyContent}
 
 {<scriptContent}
-  <script type="text/javascript" src="/js/contact.bundle.js"></script>
+  <script type="text/javascript" src="/js/contact.js"></script>
 {/scriptContent}
