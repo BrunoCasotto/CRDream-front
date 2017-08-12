@@ -2,8 +2,7 @@
 
 {<bodyContent}
   <div id="home">
-    <p>Your body content</p>
-    <button>Test</button>
+    <div class="image"></div>
   </div>
 {/bodyContent}
 

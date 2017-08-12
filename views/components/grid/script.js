@@ -1,1 +1,3 @@
-console.log("test")
+(function(template){
+
+})(document.getElementById('grid'))

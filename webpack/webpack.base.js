@@ -8,6 +8,8 @@ const assetsPath = require("./assetsFilesConfig.js");
 
 const autoprefixer = require('autoprefixer');
 
+const ImageminPlugin = require('imagemin-webpack-plugin').default
+
 module.exports = {
   entry: assetsPath,
   watch: true,
