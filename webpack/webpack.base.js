@@ -20,7 +20,8 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
       alias: {
-        _sass: path.join(__dirname, '..', 'resources', 'sass')
+        _sass: path.join(__dirname, '..', 'resources', 'sass'),
+        _img: path.join(__dirname, '..', 'resources', 'images')
       }
     },
   module: {
@@ -29,6 +30,10 @@ module.exports = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('css-loader!sass-loader!postcss-loader'),
         exclude: /node_modules/,
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        use: [ {loader: 'file-loader?limit=100000&name=/images/[hash].[ext]'} ]
       }
     ]
   },
