@@ -9,6 +9,6 @@ module.exports = {
     path.join(sass_path, 'reset.scss')
   ],
 
-  home: path.join(pages_path, 'home', 'script'),
-  home: path.join(pages_path, 'home', 'style.scss'),
+  home_script: path.join(pages_path, 'home', 'script'),
+  home_style: path.join(pages_path, 'home', 'style.scss')
 }

@@ -2,14 +2,14 @@
 
 {<bodyContent}
   <div id="home">
-    <div class="image"></div>
+    {> "components/grid/template" /}
   </div>
 {/bodyContent}
 
 {<styleContent}
-  <link href="/css/home.css" rel="stylesheet" type="text/css">
+  <link href="/css/home_style.css" rel="stylesheet" type="text/css">
 {/styleContent}
 
 {<scriptContent}
-  <script type="text/javascript" src="/js/home.js"></script>
+  <script type="text/javascript" src="/js/home_script.js"></script>
 {/scriptContent}

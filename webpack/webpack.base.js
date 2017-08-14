@@ -21,7 +21,8 @@ module.exports = {
     resolve: {
       alias: {
         _sass: path.join(__dirname, '..', 'resources', 'sass'),
-        _img: path.join(__dirname, '..', 'resources', 'images')
+        _img: path.join(__dirname, '..', 'resources', 'images'),
+        _components: path.join(__dirname, '..', 'views', 'components'),
       }
     },
   module: {
