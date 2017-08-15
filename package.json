@@ -28,13 +28,13 @@
   "homepage": "https://github.com/BrunoCasotto/CRDream-front#readme",
   "_moduleAliases": {
     "@root": ".",
-    "@src": "./src",
-    "@modules": "./src/modules",
-    "@controllers": "./src/controllers",
+    "@public": "./public",
     "@views": "./views",
     "@sass": "./resources/assets/sass",
     "@js": "./resources/assets/js",
-    "@public": "./public"
+    "@src": "./src",
+    "@modules": "./src/modules",
+    "@controllers": "./src/controllers"
   },
   "dependencies": {
     "dustjs-helpers": "^1.7.3",
