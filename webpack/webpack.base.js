@@ -26,6 +26,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
+      {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('css-loader!sass-loader!postcss-loader'),
         exclude: /node_modules/,
