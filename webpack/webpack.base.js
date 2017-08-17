@@ -10,20 +10,17 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: assetsPath,
-  watch: true,
   output: {
     path: path.join(__dirname, '..', 'public'),
     filename: "js/[name].js",
   },
-    devtool: 'source-map',
-    watch: process.env.NODE_ENV == 'production' ? false : true,
-    resolve: {
-      alias: {
-        _sass: path.join(__dirname, '..', 'resources', 'sass'),
-        _img: path.join(__dirname, '..', 'resources', 'images'),
-        _components: path.join(__dirname, '..', 'views', 'components'),
-      }
-    },
+  resolve: {
+    alias: {
+      _sass: path.join(__dirname, '..', 'resources', 'sass'),
+      _img: path.join(__dirname, '..', 'resources', 'images'),
+      _components: path.join(__dirname, '..', 'views', 'components'),
+    }
+  },
   module: {
     rules: [
       {
@@ -47,5 +44,11 @@ module.exports = {
       filename: 'css/[name].css',
       allChunks: true,
     }),
+    new webpack.optimize.UglifyJsPlugin(
+      {
+        sourceMap: true,
+        devtool: 'source-map'
+      }
+    )
   ],
 };
