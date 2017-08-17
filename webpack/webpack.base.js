@@ -16,6 +16,7 @@ module.exports = {
     filename: "js/[name].js",
   },
     devtool: 'source-map',
+    watch: process.env.NODE_ENV == 'production' ? false : true,
     resolve: {
       alias: {
         _sass: path.join(__dirname, '..', 'resources', 'sass'),
