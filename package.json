@@ -13,8 +13,7 @@
     "heroku-postbuild": "npm run build:prod",
     "dev": "concurrently \"npm run watch:dev\" \"npm run build:dev\"",
     "watch:dev": "nodemon index.js",
-    "build:dev": "webpack --watch --config webpack/webpack.base.js",
-    "build": "gulp css"
+    "build:dev": "webpack --watch --config webpack/webpack.base.js"
   },
   "repository": {
     "type": "git",
@@ -53,7 +52,7 @@
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "webpack": "^3.5.3"
+    "webpack": "3.2.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.0"
