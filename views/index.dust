@@ -1,5 +1,4 @@
 <html>
-
   <head>
     <title>{+titleContent/}</title>
     <link href="/css/bundle.css" rel="stylesheet" type="text/css">
@@ -10,10 +9,11 @@
     <div class="app">
       {+bodyContent/}
     </div>
+
     <footer>
       {+footerContent/}
     </footer>
-    {+scriptContent/}
-  </body>
 
+    {>"components/childQueue/child" /}
+  </body>
 </html>

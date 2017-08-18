@@ -33,6 +33,7 @@
     "@js": "./resources/assets/js",
     "@src": "./src",
     "@modules": "./src/modules",
+    "@helpers": "./helpers",
     "@controllers": "./src/controllers"
   },
   "dependencies": {
@@ -52,6 +53,7 @@
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "underscore": "^1.8.3",
     "webpack": "3.2.0"
   },
   "devDependencies": {

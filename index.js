@@ -8,6 +8,8 @@ const dust = require('express-dustjs')
 
 const app = express();
 
+dust._.helpers = require('@helpers/dustHelpers')
+console.log(dust._.helpers)
 app.use("/", require("@src/routes.js"))
 
 app.use(express.static('public'));

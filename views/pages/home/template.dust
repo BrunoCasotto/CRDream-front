@@ -6,10 +6,5 @@
   </div>
 {/bodyContent}
 
-{<styleContent}
-  <link href="/css/home_style.css" rel="stylesheet" type="text/css">
-{/styleContent}
-
-{<scriptContent}
-  <script type="text/javascript" src="/js/home_script.js"></script>
-{/scriptContent}
+{@registerDependencie type="style" src="/css/home_style.css"}{/registerDependencie}
+{@registerDependencie type="js" src="/js/home_script.js"}{/registerDependencie}
