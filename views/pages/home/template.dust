@@ -6,5 +6,5 @@
   </div>
 {/bodyContent}
 
-{@registerDependencie type="style" src="/css/home_style.css"}{/registerDependencie}
-{@registerDependencie type="js" src="/js/home_script.js"}{/registerDependencie}
+{@registerDependencie type="style" src="/css/pages/home/style.css"}{/registerDependencie}
+{@registerDependencie type="js" src="/js/pages/home/script.js"}{/registerDependencie}
