@@ -1,8 +1,6 @@
 <html>
   <head>
     <title>{+titleContent/}</title>
-    <link href="/css/bundle.css" rel="stylesheet" type="text/css">
-    {+styleContent/}
   </head>
 
   <body>
@@ -14,6 +12,11 @@
       {+footerContent/}
     </footer>
 
+    {!default dependencies!}
+    {@registerDependencie type="style" src="/css/bundle.css"}{/registerDependencie}
+    {@registerDependencie type="js" src="/js/bundle.js"}{/registerDependencie}
+
+    {!render dependencies!}
     {>"components/childQueue/child" /}
   </body>
 </html>
