@@ -1,0 +1,8 @@
+<div id="footer">
+  <div class="footer__content">
+    <div class="content__block"> Created by: Vampeta </div>
+  </div>
+</div>
+
+{@registerDependencie type="style" src="/css/components/footer/style.css"}{/registerDependencie}
+{@registerDependencie type="js" src="/js/components/footer/script.js"}{/registerDependencie}

@@ -20,5 +20,11 @@ module.exports = {
   'pages/home/style': path.join(pages_path, 'home', 'style.scss'),
   //components
   'components/grid/script': path.join(components_path, 'grid', 'script'),
-  'components/grid/style': path.join(components_path, 'grid', 'style.scss')
+  'components/grid/style': path.join(components_path, 'grid', 'style.scss'),
+  //header
+  'components/header/script': path.join(components_path, 'header', 'script'),
+  'components/header/style': path.join(components_path, 'header', 'style.scss'),
+  //footer
+  'components/footer/script': path.join(components_path, 'footer', 'script'),
+  'components/footer/style': path.join(components_path, 'footer', 'style.scss'),
 }

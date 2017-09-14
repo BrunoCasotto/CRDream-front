@@ -1,0 +1,12 @@
+<div id="header">
+  <div class="header__content">
+    <div class="content__block content__block__logo">
+      <div class="logo"></div>
+    </div>
+    <div class="content__block"></div>
+    <div class="content__block"></div>
+  </div>
+</div>
+
+{@registerDependencie type="style" src="/css/components/header/style.css"}{/registerDependencie}
+{@registerDependencie type="js" src="/js/components/header/script.js"}{/registerDependencie}

@@ -4,13 +4,13 @@
   </head>
 
   <body>
+    {> "components/header/template" /}
+
     <div class="app">
       {+bodyContent/}
     </div>
 
-    <footer>
-      {+footerContent/}
-    </footer>
+    {> "components/footer/template" /}
 
     {!default dependencies!}
     {@registerDependencie type="style" src="/css/bundle.css"}{/registerDependencie}
