@@ -27,4 +27,7 @@ module.exports = {
   //footer
   'components/footer/script': path.join(components_path, 'footer', 'script'),
   'components/footer/style': path.join(components_path, 'footer', 'style.scss'),
+  //slider
+  'components/slider/script': path.join(components_path, 'slider', 'script'),
+  'components/slider/style': path.join(components_path, 'slider', 'style.scss'),
 }

@@ -1,8 +1,16 @@
 {>"index"/}
 
 {<bodyContent}
-  <div id="home">
-    {> "components/grid/template" /}
+ <div id="home">
+
+    <div class="home__slider">
+      {> "components/slider/template" images=banner-images /}
+    </div>
+
+    <div class="home__grid">
+      {> "components/grid/template" /}
+    </div>
+
   </div>
 {/bodyContent}
 

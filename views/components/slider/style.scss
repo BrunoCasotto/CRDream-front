@@ -1,0 +1,14 @@
+#slider {
+  overflow: hidden;
+
+  .slider__wrapper {
+    width: 100%;
+    display: flex;
+    max-height: 400px;
+    transition: all .5s ease;
+
+    .banner {
+      display: inline-block;
+    }
+  }
+}

@@ -1,7 +1,19 @@
 @import '~_sass/config';
 
 #home {
-  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 30px;
+
+  .home__slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home__grid {
+    width: 100%;
+    padding-top: 10px;
+  }
 }
