@@ -1,0 +1,36 @@
+#navigation {
+  height: 40px;
+  width: 100%;
+  box-shadow: 0px 7px 20px -15px #444;
+
+  .navigation__content {
+    display: flex;
+    padding: 5px 0px;
+
+    &__item {
+      width: 100px;
+      height: 30px;
+      margin-right: 5px;
+      background: #ccc;
+
+      &::last-child {
+        margin-right: 0;
+      }
+
+      .item__link {
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-weight: 600;
+        transition: all .5s ease;
+
+        &:hover {
+          border-bottom: 3px solid #444;
+        }
+      }
+    }
+
+  }
+}

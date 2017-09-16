@@ -6,14 +6,10 @@ const components_path = path.join(__dirname, '..', 'views','components')
 
 const sass_path = path.join(__dirname, '..', 'resources','sass')
 
-const image_path = path.join(__dirname, '..', 'resources','images')
-
 const js_path = path.join(__dirname, '..', 'resources','js')
 
 //pages and components dependencies
 module.exports = {
-  //image
-  images: path.join(image_path, "*"),
   //defaults, bases, globals
   bundle: [
     path.join(sass_path, 'reset.scss'),
@@ -34,4 +30,7 @@ module.exports = {
   //banner
   'components/banner/script': path.join(components_path, 'banner', 'script'),
   'components/banner/style': path.join(components_path, 'banner', 'style.scss'),
+    //navigation
+  'components/navigation/script': path.join(components_path, 'navigation', 'script'),
+  'components/navigation/style': path.join(components_path, 'navigation', 'style.scss'),
 }

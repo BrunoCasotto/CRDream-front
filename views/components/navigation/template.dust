@@ -1,0 +1,33 @@
+<div id="navigation">
+  <div class="navigation__content">
+    <div class="navigation__content__item">
+      <a href="" class="item__link">
+          Menu_item
+      </a>
+    </div>
+    <div class="navigation__content__item">
+      <a href="" class="item__link">
+          Menu_item
+      </a>
+    </div>
+    <div class="navigation__content__item">
+      <a href="" class="item__link">
+          Menu_item
+      </a>
+    </div>
+    <div class="navigation__content__item">
+      <a href="" class="item__link">
+          Menu_item
+      </a>
+    </div>
+    <div class="navigation__content__item">
+      <a href="" class="item__link">
+          Menu_item
+      </a>
+    </div>
+  </div>
+
+</div>
+
+{@registerDependencie type="style" src="/css/components/navigation/style.css"}{/registerDependencie}
+{@registerDependencie type="js" src="/js/components/navigation/script.js"}{/registerDependencie}

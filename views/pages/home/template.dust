@@ -2,12 +2,15 @@
 
 {<bodyContent}
  <div id="home">
+    <div class="home__item home__item--naviation">
+      {> "components/navigation/template" /}
+    </div>
 
-    <div class="home__banner">
+    <div class="home__item home__item--banner">
       {> "components/banner/template" images=banner /}
     </div>
 
-    <div class="home__grid">
+    <div class="home__item home__item--grid">
       {> "components/grid/template" /}
     </div>
 
