@@ -1,0 +1,16 @@
+#banner {
+  .banner__content {
+    width: 100%;
+    animation: grown .5s ease;
+  }
+}
+
+@keyframes grown {
+  0% {
+    transform: scale(0);
+  }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}

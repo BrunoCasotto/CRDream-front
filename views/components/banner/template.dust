@@ -1,0 +1,10 @@
+<div id="banner">
+  <div class="banner__content">
+    <a href="{banner.link}">
+      <img src="{banner.url}" alt="">
+    </a>
+  </div>
+</div>
+
+{@registerDependencie type="style" src="/css/components/banner/style.css"}{/registerDependencie}
+{@registerDependencie type="js" src="/js/components/banner/script.js"}{/registerDependencie}

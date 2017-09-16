@@ -3,8 +3,8 @@
 {<bodyContent}
  <div id="home">
 
-    <div class="home__slider">
-      {> "components/slider/template" images=banner-images /}
+    <div class="home__banner">
+      {> "components/banner/template" images=banner /}
     </div>
 
     <div class="home__grid">
