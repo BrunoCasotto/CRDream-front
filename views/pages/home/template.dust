@@ -1,20 +1,86 @@
 {>"index"/}
 
 {<bodyContent}
- <div id="home">
-    <div class="home__item home__item--naviation">
-      {> "components/navigation/template" /}
-    </div>
+  <div id="home">
+  {?VisualSettings}
+    {#VisualSettings}
 
-    <div class="home__item home__item--banner">
-      {> "components/banner/template" images=banner /}
-    </div>
+      {#top}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{top.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/top}
 
-    <div class="home__item home__item--grid">
-      {> "components/grid/template" /}
-    </div>
+      {#topMiddle}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{topMiddle.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/topMiddle}
+
+      {#topBottom}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{topBottom.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/topBottom}
+
+      {#middleTop}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{middleTop.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/middleTop}
+
+      {#middle}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{middle.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/middle}
+
+      {#middleBottom}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{middleBottom.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/middleBottom}
+
+      {#bottomTop}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{bottomTop.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/bottomTop}
+
+      {#bottomMiddle}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{bottomMiddle.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/bottomMiddle}
+
+      {#bottom}
+        {@eq key=show value="true"}
+        <div class="home__item">
+          {> "components/{bottom.component}/template" images=banner /}
+        </div>
+        {/eq}
+      {/bottom}
+
+    {/VisualSettings}
 
   </div>
+  {/VisualSettings}
 {/bodyContent}
 
 {@registerDependencie type="style" src="/css/pages/home/style.css"}{/registerDependencie}
