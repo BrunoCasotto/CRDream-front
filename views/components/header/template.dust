@@ -1,4 +1,4 @@
-<div id="header">
+<div id="header" class="{theme}">
   <div class="header__content">
     <div class="content__block content__block__logo">
       <div class="logo"></div>

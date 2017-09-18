@@ -1,4 +1,4 @@
-<div id="footer">
+<div id="footer" class="{theme}">
   <div class="footer__content">
     <div class="content__block"> Created by: Bruno Casotto </div>
   </div>

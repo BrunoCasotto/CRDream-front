@@ -1,7 +1,9 @@
+@import '~_sass/config';
+
 #navigation {
   height: 40px;
   width: 100%;
-  box-shadow: 0px 7px 20px -15px #444;
+  box-shadow: 0px 7px 20px -15px $shadow-color-primary;
 
   .navigation__content {
     display: flex;
@@ -11,26 +13,50 @@
       width: 100px;
       height: 30px;
       margin-right: 5px;
-      background: #ccc;
+      background: $button-default-background;
+
+      &:hover {
+        background: $button-default-background-hover;
+      }
 
       &::last-child {
         margin-right: 0;
       }
 
       .item__link {
-        color: black;
+        color: $font-color-primary;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         font-weight: 600;
-        transition: all .5s ease;
 
         &:hover {
-          border-bottom: 3px solid #444;
+          border-bottom: 3px solid $border-color-primary;
         }
       }
     }
-
   }
+
+  &.black {
+    box-shadow: 0px 7px 20px -15px $black-shadow-color-primary;
+
+    .navigation__content .navigation__content__item {
+      background: $black-button-default-background;
+
+      &:hover {
+        background: $button-default-background-hover;
+      }
+    }
+
+    .navigation__content .navigation__content__item .item__link {
+      color: $black-font-color-primary;
+
+      &:hover {
+        border-bottom: 3px solid $black-border-color-primary;
+        color: $black-font-color-secondary;
+      }
+    }
+  }
+
 }

@@ -1,4 +1,4 @@
-<div id="grid"></div>
+<div id="grid" class="{theme}"></div>
 
 {@registerDependencie type="style" src="/css/components/grid/style.css"}{/registerDependencie}
 {@registerDependencie type="js" src="/js/components/grid/script.js"}{/registerDependencie}

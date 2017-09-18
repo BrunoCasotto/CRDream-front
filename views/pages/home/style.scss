@@ -7,37 +7,9 @@
 
   .home__item {
      margin: 10px 0;
-
-     &--banner {
-       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-     }
-
-     &--grid {
-      width: 100%;
-      padding-top: 10px;
-     }
-
-     &--navigation {
-
-     }
   }
 
-  .home__banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .home__navigation {
-    margin: 10px 0;
-  }
-
-  .home__grid {
-    width: 100%;
-    padding-top: 10px;
+  &.black {
+    background: $black-color-primary;
   }
 }
