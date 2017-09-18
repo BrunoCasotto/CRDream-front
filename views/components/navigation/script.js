@@ -1,4 +1,4 @@
 (function(template){
 
-})(document.getElementById("naviation"))
+})(document.getElementById("navigation"))
 
