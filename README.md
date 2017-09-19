@@ -1,5 +1,5 @@
 # CRDream-front
-  O projeto crdream é um sistema web que permite o administrador personalizar uma página web atraves de um painel administrador, alterando posicionamento de elementos visuais, aspectos de cada elemento e tema principal da página.
+  O projeto crdream é um sistema web que permite o administrador personalizar uma página web atraves de um painel, alterando posicionamento de elementos visuais, aspectos de cada elemento e tema principal da página.
 
 ### components
   O projeto conta com uma estrutura de componentes que se encontra em:
@@ -17,15 +17,15 @@ O construtor da função anonima do script receberá como template ```document.g
 Dessa forma cada componente trabalhará apenas com o escopo determinado pelo id que dever ser ÚNICO para cada componente.
 
 ### Lista de scripts e estilos
-Cada componente tem em seu template uma chamada do helper do Dust.js que insere a dependencia do script e estilo do componente em uma lista que ao será renderizada no final da página.
+Cada componente tem em seu template uma chamada do helper do Dust.js que insere a dependencia do script e estilo do componente em uma lista que será renderizada no final da página.
 ```{@registerDependencie type="style" src="/css/components/banner/style.css"}{/registerDependencie}```
 O registro da dependencia por de ser do tipo "style" ou "script", o path deve seguir o padrão do componente. por exemplo se seu componente se encontra em ```/views/components/banner``` o caminho para seu style e script sera ```/css/components/style.css``` ou ```/js/components/script.js```.
 
 ### criando um novo componente
 A criação de um novo componente é relativamente simples, básicamente o modelo dos componentes são padrões.
 Os passos para criar um novo componente são:
-* inserir uma pasta nova dentro de ```/views/components``` com o nome do componente. (componentes devem ter nomes que digam o que ele é, e não o que ele faz. Seja sensato).
-* crie os arquivos template.dust, script.js e style.js.
+* inserir uma pasta nova dentro de ```/views/components``` com o nome do componente. (componentes devem ter um nome que diga o que ele é, não o que ele faz. Seja sensato).
+* Crie os arquivos template.dust, script.js e style.js.
 * Crie o id no markup do template, o escopo no construtor do js e a dependencia no style.scss seguindo o id (que deve ter o mesmo nome do componente), conforme explanado no item "Componentes" acima.
 * dentro de ```/webpack/assetsFileConfig``` deve ser inserida uma nova linha para compilar o js e o scss do componente:
 ```sh  
