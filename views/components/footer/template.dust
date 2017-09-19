@@ -1,4 +1,4 @@
-<div id="footer" class="{theme}">
+<div id="footer" class="{VisualSettings.page.theme}">
   <div class="footer__content">
     <div class="content__block"> Created by: Bruno Casotto </div>
   </div>

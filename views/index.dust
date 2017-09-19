@@ -4,13 +4,15 @@
   </head>
 
   <body>
-    {> "components/header/template" /}
 
-    <div class="app">
+    <div id="app" class="{VisualSettings.page.theme}">
+      {> "components/header/template" /}
+
       {+bodyContent/}
+
+      {> "components/footer/template" /}
     </div>
 
-    {> "components/footer/template" /}
 
     {!default dependencies!}
     {@registerDependencie type="style" src="/css/bundle.css"}{/registerDependencie}

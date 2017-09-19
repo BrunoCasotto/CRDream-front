@@ -1,7 +1,7 @@
 <div id="banner" class="{page.theme}">
   <div class="banner__content">
     <a href="{banner.link}">
-      <img src="{banner.url}" alt="">
+      <img src="{banner.url}"{@contextDump/} alt="">
     </a>
   </div>
 </div>
