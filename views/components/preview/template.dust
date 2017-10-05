@@ -1,0 +1,4 @@
+{>"preview"/}
+<div>
+  {> "components/{component}/template" theme=theme /}
+</div>

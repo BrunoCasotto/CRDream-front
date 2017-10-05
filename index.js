@@ -22,6 +22,6 @@ app.set('view engine', 'dust')
 
 app.set('views', path.resolve(__dirname, './views'))
 
-app.listen( process.env.PORT || 8080, function() {
+app.listen( process.env.PORT || 4040, function() {
   console.log('Server running on 8080');
 });

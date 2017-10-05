@@ -1,0 +1,5 @@
+
+{+bodyContent/}
+
+{!render dependencies!}
+{>"components/childQueue/child" /}
