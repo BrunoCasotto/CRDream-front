@@ -12,7 +12,7 @@
     "build:prod": "webpack --config webpack/webpack.base.js -p",
     "heroku-postbuild": "npm run build:prod",
     "dev": "concurrently \"npm run watch:dev\" \"npm run build:dev\"",
-    "watch:dev": "nodemon -e js,dust index.js",
+    "watch:dev": "nodemon -e js,dust,json index.js",
     "build:dev": "webpack --watch --config webpack/webpack.base.js"
   },
   "repository": {

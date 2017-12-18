@@ -1,19 +1,18 @@
 {>"index"/}
 
 {<bodyContent}
-  {#VisualSettings}
+  {#visualSettings}
     <div id="home" class="{page.theme}">
-
-      {#data}
+      {#components}
         {@eq key=show value="true"}
         <div class="home__item">
-          {> "components/{.component}/template" config=./}
+          {> "components/{.name}/template" config=. theme=.theme /}
         </div>
         {/eq}
-      {/data}
+      {/components}
 
     </div>
-  {/VisualSettings}
+  {/visualSettings}
 {/bodyContent}
 
 {@registerDependencie type="style" src="/css/pages/home/style.css"}{/registerDependencie}

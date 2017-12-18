@@ -10,12 +10,36 @@ class HomeController {
    * @return {Html} html of page
    */
   index(req, res) {
-    var visualSettings = require('@mocks/VisualSettings.json');
+    //TODO get this config by database
+    const visualSettings = {
+      "page": {
+        "theme": "black"
+      },
+      "components": [
+        {
+          "name": "navigation",
+          "appearance": "default",
+          "theme": "black",
+          "show": "true",
+          "mobile": false
+        },
+        {
+          "name": "navigation",
+          "appearance": "default",
+          "theme": "",
+          "show": "true",
+          "mobile": true
+        }
+      ]
+    };
+
     const normalizator = new NormalizeVisualData(require('mobile-detect'));
 
-    normalizator.normalize(visualSettings, req);
+    let dataNormalize = Object.assign({}, visualSettings);
 
-    res.render('pages/home/template',{ visualSettings });
+    normalizator.normalize(dataNormalize, req.headers);
+
+    res.render('pages/home/template',{ visualSettings: dataNormalize });
   }
 
 }
