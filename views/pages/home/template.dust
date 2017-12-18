@@ -4,77 +4,13 @@
   {#VisualSettings}
     <div id="home" class="{page.theme}">
 
-      {#top}
+      {#data}
         {@eq key=show value="true"}
         <div class="home__item">
-          {> "components/{top.component}/template" images=banner theme=VisualSettings.theme /}
+          {> "components/{.component}/template" config=./}
         </div>
         {/eq}
-      {/top}
-
-      {#topMiddle}
-        {@eq key=show value="true"}
-        <div class="home__item">
-          {> "components/{topMiddle.component}/template" images=banner theme=VisualSettings.theme /}
-        </div>
-        {/eq}
-      {/topMiddle}
-
-      {#topBottom}
-        {@eq key=show value="true"}
-        <div class="home__item">
-          {> "components/{topBottom.component}/template" images=banner theme=VisualSettings.theme /}
-        </div>
-        {/eq}
-      {/topBottom}
-
-      {#middleTop}
-        {@eq key=show value="true"}
-        <div class="home__item">
-          {> "components/{middleTop.component}/template" images=banner theme=VisualSettings.theme /}
-        </div>
-        {/eq}
-      {/middleTop}
-
-      {#middle}
-        {@eq key=show value="true"}
-        <div class="home__item">
-          {> "components/{middle.component}/template" images=banner theme=VisualSettings.theme /}
-        </div>
-        {/eq}
-      {/middle}
-
-      {#middleBottom}
-        {@eq key=show value="true"}
-        <div class="home__item">
-          {> "components/{middleBottom.component}/template" images=banner theme=VisualSettings.theme /}
-        </div>
-        {/eq}
-      {/middleBottom}
-
-      {#bottomTop}
-        {@eq key=show value="true"}
-        <div class="home__item">
-          {> "components/{bottomTop.component}/template" images=banner theme=VisualSettings.theme /}
-        </div>
-        {/eq}
-      {/bottomTop}
-
-      {#bottomMiddle}
-        {@eq key=show value="true"}
-        <div class="home__item">
-          {> "components/{bottomMiddle.component}/template" images=banner theme=VisualSettings.theme /}
-        </div>
-        {/eq}
-      {/bottomMiddle}
-
-      {#bottom}
-        {@eq key=show value="true"}
-        <div class="home__item">
-          {> "components/{bottom.component}/template" images=banner theme=VisualSettings.theme /}
-        </div>
-        {/eq}
-      {/bottom}
+      {/data}
 
     </div>
   {/VisualSettings}
