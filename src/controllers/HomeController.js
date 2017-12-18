@@ -1,44 +1,21 @@
-//This data will be load by database
-const VisualSettings = {
-  page: {
-    theme: "black"
-  },
-  data: [
-    {
-      component: "navigation",
-      appearance: "default",
-      theme: "",
-      show: "true"
-    },
-    {
-      component: "navigation",
-      appearance: "default",
-      theme: "default",
-      show: "true"
-    }
-  ]
-}
+'use strict'
 
-/**
- * Controller to show home page...
- * @params Object
- * @return Html
- */
+const NormalizeVisualData = require('@utils/NormalizeVisualData');
 class HomeController {
 
+  /**
+   * function to return the html page
+   * @param {Object} req
+   * @param {Object} res
+   * @return {Html} html of page
+   */
   index(req, res) {
-    //This will be load by database
-    let banner = {
-      url: "http://coreviewsystems.com/wp-content/themes/sage-master/assets/images/BaseBanner.png",
-      link: "/"
-    }
+    var visualSettings = require('@mocks/VisualSettings.json');
+    const normalizator = new NormalizeVisualData(require('mobile-detect'));
 
-    res.render('pages/home/template',
-      {
-        banner ,
-        VisualSettings
-      }
-    )
+    normalizator.normalize(visualSettings, req);
+
+    res.render('pages/home/template',{ visualSettings });
   }
 
 }

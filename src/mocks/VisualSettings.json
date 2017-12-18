@@ -1,0 +1,13 @@
+{
+  "page": {
+    "theme": "black"
+  },
+  "data": [
+    {
+      "component": "navigation",
+      "appearance": "default",
+      "theme": "",
+      "show": "true"
+    }
+  ]
+}
