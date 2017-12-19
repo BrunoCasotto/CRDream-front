@@ -4,7 +4,7 @@ class NormalizeVisualData {
 
   /**
    * constructor method
-   * @param {*} mobileDetector - dependencies injection of filter lib
+   * @param {Object} mobileDetector - dependencies injection of filter lib
    */
   constructor(mobileDetector = null) {
     this.mobileDetector = mobileDetector;

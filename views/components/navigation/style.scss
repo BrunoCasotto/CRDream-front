@@ -1,18 +1,20 @@
 @import '~_sass/config';
 
 #navigation {
-  height: 40px;
+  min-height: 40px;
   width: 100%;
   box-shadow: 0px 7px 20px -15px $shadow-color-primary;
 
   .navigation__content {
     display: flex;
+    flex-wrap: wrap;
     padding: 5px 0px;
 
     &__item {
       width: 100px;
       height: 30px;
       margin-right: 5px;
+      margin-top: 2px;
       background: $button-default-background;
 
       &:hover {
