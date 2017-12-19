@@ -21,7 +21,7 @@ class HomeController {
           "appearance": "default",
           "theme": "black",
           "show": "true",
-          "mobile": false
+          "mobile": true
         },
         {
           "name": "navigation",

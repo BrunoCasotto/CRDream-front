@@ -2,9 +2,9 @@ const express = require('express');
 
 const router = express.Router();
 
-const ControllerFacade = require('@controllers/ControllerFacade');
+const FrontController = require('@controllers/FrontController');
 
-const controller = new ControllerFacade();
+const controller = new FrontController();
 
 router.route('/').get(controller.renderHome);
 

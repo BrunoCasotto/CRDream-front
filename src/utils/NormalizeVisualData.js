@@ -1,5 +1,5 @@
 'use strict'
-
+const Logger = require('@utils/Logger');
 class NormalizeVisualData {
 
   /**
@@ -26,7 +26,7 @@ class NormalizeVisualData {
         this.normalizeDesktopComponents(data);
       }
     } catch (error) {
-      console.log(`NormalizeVisualData.normalize \n Error: ${error.message}` ); // TODO - refac to logger
+      Logger.log('error', `NormalizeVisualData.normalize \n Error: ${error.message}`);
     }
 
   };
@@ -41,11 +41,11 @@ class NormalizeVisualData {
         return element.mobile ? element : null;
       });
     } catch (error) {
-      console.log(`NormalizeVisualData.normalizeMobileComponents \n Error: ${error.message}` ); // TODO - refac to logger
+      Logger.log('error', `NormalizeVisualData.normalizeMobileComponents \n Error: ${error.message}`);
     }
   };
 
-    /**
+  /**
    * Function to remove all components non desktop
    * @param {Object} data - visualSettings
    */
@@ -55,7 +55,7 @@ class NormalizeVisualData {
         return !element.mobile ? element : null;
       });
     } catch (error) {
-      console.log(`NormalizeVisualData.normalizeMobileComponents \n Error: ${error.message}` ); // TODO - refac to logger
+      Logger.log('error', `NormalizeVisualData.normalizeDesktopComponents \n Error: ${error.message}`);
     }
   };
 };
