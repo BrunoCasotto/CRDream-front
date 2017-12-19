@@ -36,4 +36,23 @@ Os passos para criar um novo componente são:
 ``` 
 Dessa forma quando voce inserir o caminho no "registerDependencie" dentro do arquivo de template do componente o caminho corresponderá ao mesmo configurado aqui.
 
+* Cada componente pode ter suas configuracoes especificas. para cada componente deve existir um config.json que descreve quais configuracoes possiveis para aquele componente.
+```sh  
+//Exemplo
+//arquivo config.json em views/components/navigation/config.json
+{
+  "name": "navigation",
+  "appearance": ["default", "black"],
+  "theme": ["default", "black"],
+  "show": ["true", "false"],
+  "mobile": [true, false]
+}
+``` 
+E importante essa configuracao pois o sistema disponibiliza uma rota que retorna uma lista de configuracoes de todos os componentes.
+(isso sera utilizado para sistemas externos que queiram servir como administrador dos componentes e documentacoes externas).
+
+Rota para obter as configs ```components/get-all-configs```
+
+
+###
 ... Read me em construção...
