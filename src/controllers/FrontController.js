@@ -1,4 +1,5 @@
 const HomeController = require("@controllers/HomeController");
+const ComponentController = require("@controllers/ComponentController");
 
 class FrontController {
 
@@ -13,6 +14,19 @@ class FrontController {
       return controller.index(req, res);
     } catch (error) {
       Logger.log('error', `FrontController.renderHome \n Error: ${error.message}`);
+    }
+  }
+
+    /**
+   * Method to call components configs
+   * @param {*} req
+   * @param {*} res
+   */
+  getAllComponentsConfigs(req, res) {
+    try {
+      return ComponentController.getAllConfigs(req, res);
+    } catch (error) {
+      Logger.log('error', `FrontController.getAllComponentsConfigs \n Error: ${error.message}`);
     }
   }
 }

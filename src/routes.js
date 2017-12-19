@@ -8,4 +8,7 @@ const controller = new FrontController();
 
 router.route('/').get(controller.renderHome);
 
+//background routes
+router.route('/components/get-all-configs').get(controller.getAllComponentsConfigs);
+
 module.exports = router;

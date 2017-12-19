@@ -1,0 +1,7 @@
+{
+  "name": "grid",
+  "appearance": ["default", "black"],
+  "theme": ["default", "black"],
+  "show": ["true", "false"],
+  "mobile": [true, false]
+}
