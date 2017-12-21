@@ -9,12 +9,8 @@ class FrontController {
    * @param {*} res
    */
   renderHome(req, res) {
-    try {
-      let controller = new HomeController();
-      return controller.index(req, res);
-    } catch (error) {
-      Logger.log('error', `FrontController.renderHome \n Error: ${error.message}`);
-    }
+    let controller = new HomeController();
+    return controller.index(req, res);
   }
 
     /**
@@ -23,11 +19,16 @@ class FrontController {
    * @param {*} res
    */
   getAllComponentsConfigs(req, res) {
-    try {
-      return ComponentController.getAllConfigs(req, res);
-    } catch (error) {
-      Logger.log('error', `FrontController.getAllComponentsConfigs \n Error: ${error.message}`);
-    }
+    return ComponentController.getAllConfigs(req, res);
+  }
+
+  /**
+ * Function to render the component html preview
+ * @param {Object} req
+ * @param {Object} res
+ */
+  getComponentPreview(req, res) {
+    return ComponentController.renderPreviewComponent(req, res);
   }
 }
 

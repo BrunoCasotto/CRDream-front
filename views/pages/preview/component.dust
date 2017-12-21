@@ -1,0 +1,20 @@
+{>"index"/}
+{<headerOverride}
+<section>
+  <h2 class="preview__title"> Component <span>{name}</span> preview </h2>
+</section>
+{/headerOverride}
+
+{<bodyContent}
+<div id="preview">
+  {> "components/{name}/template" config=mock theme=.theme /}
+</div>
+{/bodyContent}
+
+{<footerOverride}
+<section>
+<center>component preview</center>
+</section>
+{/footerOverride}
+
+{@registerDependencie type="style" src="/css/pages/preview/style.css"}{/registerDependencie}

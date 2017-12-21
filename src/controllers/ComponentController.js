@@ -68,6 +68,22 @@ class ComponentController {
       return [];
     }
   }
+
+  /**
+   * Function to render the component html preview
+   * @param {Object} req
+   * @param {Object} res
+   */
+  renderPreviewComponent(req, res) {
+    try {
+      let name = req.query.name;
+      let mock = require(`@components/${name}/mock.json`);
+      res.render('pages/preview/component',{ name, mock });
+
+    } catch (error) {
+      Logger.log('error', `ComponentController.renderPreviewComponent \n Error: ${error.message}`);
+    }
+  }
 }
 
 module.exports = new ComponentController();

@@ -18,6 +18,9 @@ module.exports = {
   //pages
   'pages/home/script': path.join(pages_path, 'home', 'script'),
   'pages/home/style': path.join(pages_path, 'home', 'style.scss'),
+  //preview page
+  'pages/preview/script': path.join(pages_path, 'preview', 'script'),
+  'pages/preview/style': path.join(pages_path, 'preview', 'style.scss'),
   //components
   'components/grid/script': path.join(components_path, 'grid', 'script'),
   'components/grid/style': path.join(components_path, 'grid', 'style.scss'),

@@ -36,7 +36,8 @@
     "@helpers": "./helpers",
     "@controllers": "./src/controllers",
     "@utils": "./src/utils",
-    "@mocks": "./src/mocks"
+    "@mocks": "./src/mocks",
+    "@components": "./views/components"
   },
   "dependencies": {
     "babel-core": "^6.25.0",

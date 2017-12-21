@@ -1,0 +1,15 @@
+@import '~_sass/config';
+
+#preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  border: solid 1px $border-color-primary;
+  padding: 20px;
+
+  .preview__title {
+    text-align: center;
+    font-size: 20px;
+  }
+}

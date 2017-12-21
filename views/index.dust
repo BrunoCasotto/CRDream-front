@@ -7,11 +7,15 @@
   <body>
 
     <div id="app" class="{VisualSettings.page.theme}">
-      {> "components/header/template" /}
+      {+headerOverride}
+        {> "components/header/template" /}
+      {/headerOverride}
 
       {+bodyContent/}
 
-      {> "components/footer/template" /}
+      {+footerOverride}
+        {> "components/footer/template" /}
+      {/footerOverride}
     </div>
 
 
