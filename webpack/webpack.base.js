@@ -4,12 +4,27 @@ const path = require('path');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const assetsPath = require("./assetsFilesConfig.js");
-
 const autoprefixer = require('autoprefixer');
 
+//paths
+const sass_path = path.join(__dirname, '..', 'resources','sass');
+const js_path = path.join(__dirname, '..', 'resources','js');
+
+const finder = require('./assetsFinder');
+
+let bundle = {
+  bundle :[
+    path.join(sass_path, 'reset.scss'),
+    path.join(js_path, 'global.js')
+  ]
+};
+
+let components = finder.findComponentsAssets();
+
+let pages = finder.findPagesAssets();
+
 module.exports = {
-  entry: assetsPath,
+  entry: Object.assign(bundle, pages, components),
   output: {
     path: path.join(__dirname, '..', 'public'),
     filename: "js/[name].js",
