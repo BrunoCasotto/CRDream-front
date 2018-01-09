@@ -27,14 +27,6 @@ Os passos para criar um novo componente são:
 * inserir uma pasta nova dentro de ```/views/components``` com o nome do componente. (componentes devem ter um nome que diga o que ele é, não o que ele faz. Seja sensato).
 * Crie os arquivos template.dust, script.js e style.js.
 * Crie o id no markup do template, o escopo no construtor do js e a dependencia no style.scss seguindo o id (que deve ter o mesmo nome do componente), conforme explanado no item "Componentes" acima.
-* dentro de ```/webpack/assetsFileConfig``` deve ser inserida uma nova linha para compilar o js e o scss do componente:
-```sh  
-//componenteName
-//esse padrão deve ser seguido em todos os componentes. Componentes com o mesmo nome não deve ocorrer.
-  'components/componenteName/script': path.join(components_path, 'componenteName', 'script'),
-  'components/componenteName/style': path.join(components_path, 'componenteName', 'style.scss'),
-``` 
-Dessa forma quando voce inserir o caminho no "registerDependencie" dentro do arquivo de template do componente o caminho corresponderá ao mesmo configurado aqui.
 
 * Cada componente pode ter suas configuracoes especificas. para cada componente deve existir um config.json que descreve quais configuracoes possiveis para aquele componente.
 ```sh  
@@ -51,7 +43,24 @@ Dessa forma quando voce inserir o caminho no "registerDependencie" dentro do arq
 E importante essa configuracao pois o sistema disponibiliza uma rota que retorna uma lista de configuracoes de todos os componentes.
 (isso sera utilizado para sistemas externos que queiram servir como administrador dos componentes e documentacoes externas).
 
-Rota para obter as configs ```components/get-all-configs```
+Rota para obter as configs: ```components/get-all-configs```
+
+* Cada componente deve ter seu arquivo de mocks que da um exemplo de dado que o componente espera tratar.
+```sh
+//Exemplo
+//arquivo mock.json em views/components/navigation/config.json
+{
+  "name": "navigation",
+  "appearance": "default",
+  "theme": "default",
+  "show": "true",
+  "mobile": true
+}
+```
+Nesse caso o mocks dele trata-se apenas de uma configuração básica para exibição default do componente. Este arquivo e utilizado par a rota de preview de componente.
+
+Rota para obter o preview do componente navigation: ```/components/get-preview?name=navigation```
+Onde name é o nome do componente.
 
 
 ###
